@@ -1,35 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3758220358268980" crossorigin="anonymous"></script>
-<title>Atul singh's Web tools</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-    a {
-        text-decoration: none;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Harmonium - by Atul Singh</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3758220358268980" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at center, #6d4c41 0%, #3e2723 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Georgia', serif;
+            color: #fce4ec;
+        }
+
+        .harmonium-case {
+            background: #4e342e; /* polished wood texture */
+            position: relative;
+            border: 20px solid #2e1c14;
+            border-radius: 15px;
+            box-shadow: 
+                0px 30px 50px rgba(0,0,0,0.8), 
+                inset 0px 5px 15px rgba(255,255,255,0.1), 
+                inset 0px -5px 20px rgba(0,0,0,0.6); 
+            padding: 60px 40px;
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        /* Decorative wood panels on the case */
+        .harmonium-case::before {
+            content: '';
+            position: absolute;
+            top: 10px; bottom: 10px; left: 10px; right: 10px;
+            border: 2px solid #3e2723;
+            border-radius: 5px;
+            pointer-events: none;
+        }
+
+        .brass-plaque {
+            background: radial-gradient(circle, #fbc02d, #f57f17);
+            border: 4px solid #bc5100;
+            border-radius: 8px;
+            padding: 25px 30px;
+            box-shadow: 
+                4px 8px 12px rgba(0,0,0,0.6), 
+                inset 2px 4px 6px rgba(255,255,255,0.5);
+            margin: 0 auto 50px auto;
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Plaque Screws */
+        .brass-plaque::before, .brass-plaque::after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background: #3e2723;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            box-shadow: inset 1px 2px 4px rgba(0,0,0,0.9), 1px 1px 1px rgba(255,255,255,0.5);
+        }
+        .brass-plaque::before { left: 15px; }
+        .brass-plaque::after { right: 15px; }
+
+        .brass-plaque h2 {
+            margin: 0;
+            color: #3e2723;
+            text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+            font-size: 2.2em;
+            font-style: italic;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .brass-plaque p {
+            margin: 5px 0 0 0;
+            color: #4e342e;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .latch-button {
+            display: inline-block;
+            background: #2e1c14; /* Dark wood for button */
+            color: #fbc02d; /* brass text */
+            text-decoration: none;
+            font-size: 1.4em;
+            padding: 18px 45px;
+            border: 3px solid #795548;
+            border-radius: 50px;
+            box-shadow: 
+                0px 8px 15px rgba(0,0,0,0.6), 
+                inset 0px 3px 5px rgba(255,255,255,0.2);
+            transition: all 0.2s ease-in-out;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .latch-button:hover {
+            background: #3e2723;
+            color: #fff8e1;
+            transform: translateY(-3px);
+            box-shadow: 
+                0px 12px 20px rgba(0,0,0,0.8), 
+                inset 0px 3px 5px rgba(255,255,255,0.3);
+            border-color: #8d6e63;
+        }
+
+        .latch-button:active {
+            transform: translateY(4px);
+            box-shadow: 
+                0px 2px 5px rgba(0,0,0,0.6), 
+                inset 0px 3px 5px rgba(0,0,0,0.5);
+        }
+
+        .info-text {
+            margin-top: 35px;
+            color: #d7ccc8;
+            font-size: 1.1em;
+            line-height: 1.5;
+            padding: 0 20px;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+    </style>
 </head>
 <body>
 
-    <div class="w3-container">
-        <h2>Atul singh's Web tools</h2>
+    <div class="harmonium-case">
+        <div class="brass-plaque">
+            <h2>Swara Harmonium</h2>
+            <p>Developed by Atul Singh</p>
+        </div>
 
-        <ul class="w3-ul w3-card w3-xlarge">
-            <li><a class="ui-btn" href="webharmonium.html">Web Harmonium</a></li>
-            <li><a class="ui-btn" href="webtambura.html">Web Tambura</a></li>
-            <li><a class="ui-btn" href="exercisetimer.html">Exercise Timer</a></li>
-            <li><a class="ui-btn" href="DateTimeZone.html">Date Time and TimeZone</a></li>
-            <li><a class="ui-btn" href="vishnu_namam.html">Vishnu Sahasra Namam (Archanai)</a></li>
-            <li><a class="ui-btn" href="vishnu-sahasra-namam.html">Vishnu Sahasra Namam (Parayanam)</a></li>
-            <li><a class="ui-btn" href="parayanam.html">Parayanam Tracker</a></li>
-            <li><a class="ui-btn" href="loops.html">Loop Player</a></li>
-            <li><a class="ui-btn" href="nama_sheet.html">Nama Writing Sheet</a></li>
-        </ul>
-        <br>
+        <div>
+            <a class="latch-button" href="webharmonium.html">Open Harmonium</a>
+        </div>
+        
+        <div class="info-text">
+            <p>Welcome to the virtual Harmonium. This repository has been streamlined to exclusively host this instrument.</p>
+        </div>
     </div>
 
 </body>
-
 </html>
