@@ -19,5 +19,5 @@ Because this application relies entirely on client-side logic without any requir
 
 ## Usage
 
-Simply visit the main page (`(https://websiteharmonium.netlify.app/webharmonium)`) to "open" the harmonium and start playing!
+Simply visit the main page ( https://websiteharmonium.netlify.app/webharmonium ) to "open" the harmonium and start playing!
 
